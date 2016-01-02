@@ -1,0 +1,22 @@
+{
+  "listofobjects" : [
+    { "dog" : "woof" },
+    { "cat" : "meow" },
+    { "cow" : "moo" }
+  ],
+  "listofstrings" : [
+    "alouette",
+    "je",
+    "te",
+    "plumerai"
+  ],
+  "listofnumbers" : [
+    1,
+    2,
+    3,
+    4
+  ],
+  "number" : 42,
+  "string" : "Well, hello there!",
+  "name" : "Test JSON Object"
+}
