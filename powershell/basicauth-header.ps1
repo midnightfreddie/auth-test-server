@@ -12,7 +12,7 @@
 
 [cmdletbinding()]
 param (
-  $Uri = "http://192.168.1.73:32774/basicauth/stuff.json",
+  $Uri = "http://authtest.midnightfreddie.com/basicauth/stuff.json",
   $Username = "authtestusername",
   $Password = "authtestpassword"
 )
@@ -55,4 +55,3 @@ function New-BasicAuthHeader {
 $Headers = New-BasicAuthHeader -Username $Username -Password $Password
 
 Invoke-RestMethod -Uri $Uri -Headers $Headers
-

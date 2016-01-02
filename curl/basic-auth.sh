@@ -7,6 +7,6 @@
 
 username=authtestusername
 password=authtestpassword
-uri=http://192.168.1.70:8911/basicauth/stuff.json
+uri=http://authtest.midnightfreddie.com/basicauth/stuff.json
 
 curl --basic --user $username:$password "$uri"

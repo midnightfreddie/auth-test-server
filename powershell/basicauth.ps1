@@ -11,7 +11,7 @@
 
 [cmdletbinding()]
 param (
-  $Uri = "http://192.168.1.73:32774/basicauth/stuff.json",
+  $Uri = "http://authtest.midnightfreddie.com/basicauth/stuff.json",
   $Credential = (New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList "authtestusername",  ("authtestpassword" | ConvertTo-SecureString -AsPlainText -Force ))
 )
 
