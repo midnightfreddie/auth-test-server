@@ -1,0 +1,4 @@
+auth_test_server:
+  build: .
+  ports:
+    - "80"
