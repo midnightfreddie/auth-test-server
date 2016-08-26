@@ -1,4 +1,4 @@
-FROM hub.docker.com/ubuntu:14.04
+FROM ubuntu:14.04
 
 MAINTAINER jim@midnightfreddie.com
 
