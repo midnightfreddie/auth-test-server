@@ -2,7 +2,8 @@ FROM registry.access.redhat.com/rhel7
 
 MAINTAINER jim@midnightfreddie.com
 
-RUN yum install -y nginx \
+RUN yum install -y epel-release \
+  && yum install -y nginx \
   && yum clean all
 
 # VOLUME /srv/www
