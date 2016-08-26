@@ -1,11 +1,9 @@
-FROM ubuntu:14.04
+FROM registry.access.redhat.com/rhel7
 
 MAINTAINER jim@midnightfreddie.com
 
-RUN export DEBIAN_FRONTEND=noninteractive \
-  && apt-get install -y nginx \
-  && apt-get clean \
-  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN yum install -y nginx \
+  && yum clean all
 
 # VOLUME /srv/www
 
