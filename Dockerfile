@@ -2,8 +2,11 @@ FROM registry.access.redhat.com/rhel7
 
 MAINTAINER jim@midnightfreddie.com
 
-RUN yum -y install epel-release \
-  && yum -y install nginx \
+RUN wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm \
+  && rpm -ivh epel-release-7-8.noarch.rpm \
+  && yum -y install epel-release 
+
+RUN yum -y install nginx \
   && yum -y clean all
 
 # VOLUME /srv/www
